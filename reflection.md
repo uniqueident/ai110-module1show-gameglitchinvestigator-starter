@@ -39,16 +39,19 @@ Document at least 3 bugs you found. Add rows as needed.
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
-  - I stepped through the conditional logic per "unit" function or method in this case. And Saw that if the individual units were working logistically with what should be expected from a simplistic application, I would consider it good. As such,
+  - I stepped through the conditional logic per "unit" function or method in this case. And Saw that if the individual units were working logistically with what should be expected from a simplistic application, I would consider it good. As such, I had to do a lot of manual vetting, and when things didn't make sense, or if I did know, I would contest the response given, then double check its work using a browser, or a separate source If I had one.
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+  - One test that I ran would be to test the parse_guess function using a None input, so if no response is given, that it would simply fail. This was using pytest. What it showed me was the behavior that this function had.
 - Did AI help you design or understand any tests? How?
+  - AI assisted in designing the tests, as they are fairly simple, it is not difficult to see that the checks are correct. I state this in spite of its failure in testing the same thing repeatedly, and having to fix that.
 
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+  - According to what Claude states, and my brief research, Streamlit reruns the given script repeatedly, and as such checks and states get saved between runs, allowing for an interactive application.
 
 ---
 
@@ -56,5 +59,8 @@ Document at least 3 bugs you found. Add rows as needed.
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+    - One habit or strategy that I want to reuse in future labs or projects is to ask for narrow scope to the AI, rather than give it a more sweeping capability, simply because this results in some logically inconsistent decisions and errors that appear.
 - What is one thing you would do differently next time you work with AI on a coding task?
+  - One thing that I would do differently next time I work with AI on a coding task, would be to spend time creating a baseline the AI can work off of, so that way I don't have to spend as much time double checking its work against what I input, basically a markdown file that defines the behaviors and actions I want it to take.
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+  - This project has solidified my view on AI generated code, namely on the simple issues that can get by a seemly powerful machine. However, it also taught me on how these issues can be reduced, corrected and fixed by applying knowledge forward.
